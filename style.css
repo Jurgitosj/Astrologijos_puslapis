@@ -7,6 +7,12 @@
 /* MAIN */
 
 /*FOOTER*/
+.main-bg-img {
+	background-image: url('../Astrologijos_puslapis/IMG/Fono_paveikslėliai/zydras_fonas_apacioje.png');
+	background-size: 100%;
+	background-position: 0% 60%;
+}
+
 
 .footer-bg-img {
 	background-image: url('./IMG/Fono_paveikslėliai/zydras_fonas_apacioje.png');

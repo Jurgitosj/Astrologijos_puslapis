@@ -7,17 +7,19 @@
     font-family: "Bodoni MT";
     color: #ff9916;
     -webkit-text-stroke: 1.5px black;
-
+    
 } 
+
+.display-title{
+    font-size: 5rem;
+}
 
 
 
 #headerLogo{
-    
     width: 300px;
-    height: 270px;
-    
 }
+
 header {
     /* height: 300px; */
     background-image: url(IMG/Fono_paveikslėliai/zydras_fonas.png);
@@ -86,3 +88,12 @@ header {
 		background-position: bottom;
 	}
 }
+
+
+
+
+@media (min-width: 768px) { 
+    .display-title{
+        font-size: 8rem;
+    }
+ }

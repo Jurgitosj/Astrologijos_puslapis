@@ -68,6 +68,7 @@ header {
 /*FOOTER*/
 .main-bg-img {
 	background-image: url('../Astrologijos_puslapis/IMG/Fono_paveikslėliai/zydras_fonas_apacioje.png');
+	background-repeat: no-repeat;
 	background-size: 100%;
 	background-position: 0% 60%;
 }

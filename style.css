@@ -1,10 +1,7 @@
 /* spalvos */
 
 /* HEADER */
-.header {
-    
-    margin: auto;
-}
+
 
 #title { 
     font-family: "Bodoni MT";
@@ -21,20 +18,14 @@
     
 }
 header {
-    height: 300px;
+    /* height: 300px; */
     background-image: url(IMG/Fono_paveikslėliai/zydras_fonas.png);
     text-align: center;
-    
-    
-    
+
 }
-.nav {
-    list-style-type: none;
-    background-color: cadetblue;
-    margin: 0 auto;
-    width: 100%;
+
     
-}
+
 #navigation {
     margin-top: -15px;
     margin-left: -32px;
@@ -43,17 +34,34 @@ header {
     font-family: "Bodoni MT";
     font-size: 30px;
     float: left;
-    background-color: lightcyan;
     border-style: solid;
     width: 20%;
     margin: 0 auto;
-    padding: 10px;
+    padding: 0px;
     border-color: black;
     color: black;
+    border-radius: 5px;
+    background-image: url(IMG/Fono_paveikslėliai/rozinis_fonas.png);
+    background-position: center;
+}
+
+
+.nav-link {
+    color: black !important;
 }
 .nav-item:hover {
-    background-color: yellow;
+    background-image: url(IMG/Fono_paveikslėliai/geltonas_fonas.png);
 }
+.nav-link:hover {
+    background-image: url(IMG/Fono_paveikslėliai/geltonas_fonas.png);
+}
+
+.col-12 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+
 }
 
 

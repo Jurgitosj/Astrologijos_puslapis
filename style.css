@@ -32,13 +32,10 @@ header {
     font-family: "Bodoni MT";
     font-size: 30px;
     float: left;
-    border-style: solid;
     width: 20%;
     margin: 0 auto;
     padding: 0px;
-    border-color: black;
     color: black;
-    border-radius: 5px;
     background-image: url(IMG/Fono_paveikslėliai/rozinis_fonas.png);
     background-position: center;
 }

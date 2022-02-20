@@ -4,3 +4,18 @@
 	background-size: 100%;
 	background-position: 0% 60%;
 }
+
+.card-columns {
+	display: inline-block;
+}
+
+.card-img-top {
+	height: 200px;
+	width: auto;
+}
+
+.card-text {
+	text-align: left;
+}
+
+

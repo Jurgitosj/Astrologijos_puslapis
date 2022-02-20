@@ -54,6 +54,67 @@
     </header>
 
     <main>
+        <div id="drakonu-korteles" class="container w-75 p-3">
+            <div class="row">
+                <!-- Visos korteles cia -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="../../IMG/Drakonu_img/abejingumo_drakonas.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Card title
+                            </h5>
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the
+                                card's content.
+                            </p>
+                            <a href="#" onclick="rodytiDaugiauTeksto('drakonu-tekstas-1');" class="btn btn-primary">
+                                Puslapis 1 >>>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="../../IMG/Drakonu_img/agresijos_drakonas.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Card title
+                            </h5>
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the
+                                card's content.
+                            </p>
+                            <a href="#" onclick="rodytiDaugiauTeksto('drakonu-tekstas-2');" class="btn btn-primary">
+                                Puslapis 2 >>>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="drakonu-tekstai" style="display: none;" class="container">
+            <!-- Tekstai -->
+            <div id="drakonu-tekstas-1">
+                <h1>puslapis1</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, accusamus, reprehenderit ea a
+                    molestias obcaecati sequi accusantium iusto hic aut, molestiae atque voluptate perferendis deleniti
+                    maiores ducimus ex repudiandae. Minus!
+                </p>
+            </div>
+            <div id="drakonu-tekstas-2">
+                <h1>puslapis2</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, accusamus, reprehenderit ea a
+                    molestias obcaecati sequi accusantium iusto hic aut, molestiae atque voluptate perferendis deleniti
+                    maiores ducimus ex repudiandae. Minus!
+                </p>
+            </div>
+            <!-- Mygtukas atgal -->
+            <a href="#" onclick="rodytiKorteles();" class="btn btn-primary">
+                Grizti atgal
+            </a>
+        </div>
     </main>
 
     <footer class="footer-bg-img">
@@ -146,6 +207,13 @@
             </div>
         </div>
     </footer>
+
+
+    <script>
+        (function () {
+            initializePage();
+        })();
+    </script>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

@@ -4,3 +4,11 @@
 	background-size: 100%;
 	background-position: 0% 60%;
 }
+
+.hide{
+	display: none;
+}
+
+.show {
+	display: block;
+}

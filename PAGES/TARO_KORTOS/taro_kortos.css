@@ -7,9 +7,11 @@
 	height: 300px;
 	perspective: 1000px;
 	display: inline-block;
+	margin: 1px auto;
 }
 .card-box img {
 	border-radius: 10px;
+	height: 300px;
 }
 .card-box-inner {
 	position: relative;
@@ -35,4 +37,33 @@
 }
 .card-box-opened .card-box-inner {
 	transform: rotateY(180deg);
+}
+.lead {
+	text-align: justify;
+}
+.card-description-image {
+	display: flex;
+	align-items: center;
+	justify-items: end;
+	flex-wrap: wrap;
+	align-content: stretch;
+	justify-content: flex-end;
+}
+
+#kortu-aprasymai img {
+	max-width: 185px;
+	width: 100%;
+}
+
+@media screen and (max-device-width: 992px) {
+	.card-description-image img {
+		margin: 0 auto;
+		display: block;
+	}
+}
+@media screen and (min-device-width: 992px) {
+	.card-description-image img {
+		margin-right: 30px;
+		float: right;
+	}
 }

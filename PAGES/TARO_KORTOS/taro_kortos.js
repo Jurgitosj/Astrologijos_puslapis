@@ -1,6 +1,10 @@
 let taroKortos = document.querySelectorAll("#taro-kortos .card-box");
-let kortuAprasymai = document.querySelectorAll("#kortu-aprasymai div");
+let kortuAprasymai = document.querySelectorAll("#kortu-aprasymai .row");
 
+console.log("taroKortos", taroKortos.length);
+console.log("kortuAprasymai", kortuAprasymai.length);
+
+let paspaustosUzverstosKortos = [];
 let atverstosKortos = [];
 let kortuLaikai = [ "Praeitis", "Dabartis", "Ateitis" ];
 
@@ -30,6 +34,10 @@ for (let i = 0; i < taroKortos.length; i++) {
 		if (atverstosKortos.length >= 3) {
 			return;
 		}
+		if (paspaustosUzverstosKortos.findIndex(x => x == i) != -1) {
+			return;
+		}
+		paspaustosUzverstosKortos.push(i);
 
 		let isrinktaKortosIndeksas = -1;
 		while(true) {
@@ -39,6 +47,7 @@ for (let i = 0; i < taroKortos.length; i++) {
 				break;
 			}
 		}
+		console.log("isrinktaKortosIndeksas", isrinktaKortosIndeksas);
 
 		atverstosKortos.push(isrinktaKortosIndeksas);
 		korta.classList.add("card-box-opened");

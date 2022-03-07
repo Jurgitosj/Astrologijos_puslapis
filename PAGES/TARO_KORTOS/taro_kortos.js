@@ -1,9 +1,6 @@
 let taroKortos = document.querySelectorAll("#taro-kortos .card-box");
 let kortuAprasymai = document.querySelectorAll("#kortu-aprasymai .row");
 
-console.log("taroKortos", taroKortos.length);
-console.log("kortuAprasymai", kortuAprasymai.length);
-
 let paspaustosUzverstosKortos = [];
 let atverstosKortos = [];
 let kortuLaikai = [ "Praeitis", "Dabartis", "Ateitis" ];

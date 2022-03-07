@@ -1,0 +1,38 @@
+.hide {
+	display: none;
+}
+.card-box {
+	background-color: transparent;
+	width: 183px;
+	height: 300px;
+	perspective: 1000px;
+	display: inline-block;
+}
+.card-box img {
+	border-radius: 10px;
+}
+.card-box-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+.card-box-front, .card-box-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.card-box-front {
+	color: black;
+}
+.card-box-back {
+	color: white;
+	transform: rotateY(180deg);
+}
+.card-box-opened .card-box-inner {
+	transform: rotateY(180deg);
+}

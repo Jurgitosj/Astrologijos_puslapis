@@ -3,7 +3,7 @@ let kortuAprasymai = document.querySelectorAll("#kortu-aprasymai .row");
 
 let paspaustosUzverstosKortos = [];
 let atverstosKortos = [];
-let kortuLaikai = [ "Praeitis", "Dabartis", "Ateitis" ];
+let kortuLaikai = ["Praeitis", "Dabartis", "Ateitis"];
 
 function sleptiKortas() {
 	let visosKortos = document.querySelector("#taro-kortos");
@@ -27,7 +27,7 @@ function nustatytiKortuAprasymuMatomuma(arReikiaRodytiPasirinktasKortas) {
 
 for (let i = 0; i < taroKortos.length; i++) {
 	const korta = taroKortos[i];
-	korta.addEventListener("click", function(){
+	korta.addEventListener("click", function () {
 		if (atverstosKortos.length >= 3) {
 			return;
 		}
@@ -37,7 +37,7 @@ for (let i = 0; i < taroKortos.length; i++) {
 		paspaustosUzverstosKortos.push(i);
 
 		let isrinktaKortosIndeksas = -1;
-		while(true) {
+		while (true) {
 			isrinktaKortosIndeksas = Math.floor(Math.random() * kortuAprasymai.length);
 			const doesntExist = atverstosKortos.findIndex(x => x == isrinktaKortosIndeksas) == -1;
 			if (doesntExist) {

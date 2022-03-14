@@ -1,0 +1,14 @@
+.main-bg-img {
+	background-image: url('./IMG/Fono_paveikslėliai/zydras_fonas_apacioje.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: 0% 60%;
+}
+
+.hide{
+	display: none;
+}
+
+.show {
+	display: block;
+}

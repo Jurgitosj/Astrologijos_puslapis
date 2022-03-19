@@ -21,7 +21,7 @@
         crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="../../main.css">
-    <link rel="stylesheet" href="../SUDERINAMUMAS/suderinamumas.css">
+    <link rel="stylesheet" href="suderinamumas.css">
 
     <title>Astrologija</title>
 </head>
@@ -104,56 +104,99 @@
         <h5 class="text-center p-3">Žemiau esančiuose laukuose pasirinkite savo bei savo poros zodiako ženklus.</h5>
 
 
+
         <div class="container w-75" id="table">
             <div class="row g-3 p-4">
-                <div class="col-md">
-                    <div class="form-floating">
-                        <h4>
-                            <p class="text-center text-danger"><b>Jūsų zodiako ženklas</b></p>
-                        </h4>
-                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                            <option value="1">Avinas (03/20 - 04/19)</option>
-                            <option value="2">Jautis (04/20 - 05/20)</option>
-                            <option value="3">Dvyniai (05/21 - 06/20)</option>
-                            <option value="4">Vėžys (06/21 - 07/22)</option>
-                            <option value="5">Liūtas (07/23 - 08/22)</option>
-                            <option value="6">Mergelė (08/23 - 09/22)</option>
-                            <option value="7">Svarstyklės (09/23 - 10/22)</option>
-                            <option value="8">Skorpionas (10/23 - 11/21)</option>
-                            <option value="9">Šaulys (11/22 - 12/21)</option>
-                            <option value="10">Ožiaragis (12/22 - 01/19)</option>
-                            <option value="11">Vandenis (01/20 - 02/18)</option>
-                            <option value="12">Žuvys (02/19 - 03/20)</option>
-                        </select>
-                    </div>
-                </div>
+                <form name="suderinamumoForma">
 
-                <div class="col-md">
-                    <div class="form-floating">
-                        <h4>
-                            <p class="text-center text-danger"><b>Partnerio zodiako ženklas</b></p>
-                        </h4>
-                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                            <option value="1">Avinas (03/20 - 04/19)</option>
-                            <option value="2">Jautis (04/20 - 05/20)</option>
-                            <option value="3">Dvyniai (05/21 - 06/20)</option>
-                            <option value="3">Vėžys (06/21 - 07/22)</option>
-                            <option value="3">Liūtas (07/23 - 08/22)</option>
-                            <option value="3">Mergelė (08/23 - 09/22)</option>
-                            <option value="3">Svarstyklės (09/23 - 10/22)</option>
-                            <option value="3">Skorpionas (10/23 - 11/21)</option>
-                            <option value="3">Šaulys (11/22 - 12/21)</option>
-                            <option value="3">Ožiaragis (12/22 - 01/19)</option>
-                            <option value="3">Vandenis (01/20 - 02/18)</option>
-                            <option value="3">Žuvys (02/19 - 03/20)</option>
-                        </select>
+                    <div class="col-md">
+                        <div class="form-floating">
+                            <h4>
+                                <p class="text-center text-danger"><b>Jūsų zodiako ženklas</b></p>
+                            </h4>
+
+                            <select class="form-select select1 text-center" id="jusuZenklas"
+                                aria-label="Floating label select example">
+                                <option value="avinas" id="avinas">Avinas (03/20 - 04/19)</option>
+                                <option value="jautis" id="jautis">Jautis (04/20 - 05/20)</option>
+                                <option value="dvyniai" id="dvyniai">Dvyniai (05/21 - 06/20)</option>
+                                <option value="vezys" id="vezys">Vėžys (06/21 - 07/22)</option>
+                                <option value="liutas" id="liutas">Liūtas (07/23 - 08/22)</option>
+                                <option value="mergele" id="mergele">Mergelė (08/23 - 09/22)</option>
+                                <option value="svarstykles" id="svarstykles">Svarstyklės (09/23 - 10/22)</option>
+                                <option value="skorpionas" id="skorpionas">Skorpionas (10/23 - 11/21)</option>
+                                <option value="saulys" id="saulys">Šaulys (11/22 - 12/21)</option>
+                                <option value="oziaragis" id="oziaragis">Ožiaragis (12/22 - 01/19)</option>
+                                <option value="vandenis" id="vandenis">Vandenis (01/20 - 02/18)</option>
+                                <option value="zuvys" id="zuvys">Žuvys (02/19 - 03/20)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-md">
+                        <div class="form-floating">
+                            <h4>
+                                <p class="text-center text-danger"><b>Partnerio zodiako ženklas</b></p>
+                            </h4>
+                            <select class="form-select select2 text-center" id="partnerioZenklas"
+                                aria-label="Floating label select example">
+                                <option value="avinas" id="avinas">Avinas (03/20 - 04/19)</option>
+                                <option value="jautis" id="jautis">Jautis (04/20 - 05/20)</option>
+                                <option value="dvyniai" id="dvyniai">Dvyniai (05/21 - 06/20)</option>
+                                <option value="vezys" id="vezys">Vėžys (06/21 - 07/22)</option>
+                                <option value="liutas" id="liutas">Liūtas (07/23 - 08/22)</option>
+                                <option value="mergele" id="mergele">Mergelė (08/23 - 09/22)</option>
+                                <option value="svarstykles" id="svarstykles">Svarstyklės (09/23 - 10/22)</option>
+                                <option value="skorpionas" id="skorpionas">Skorpionas (10/23 - 11/21)</option>
+                                <option value="saulys" id="saulys">Šaulys (11/22 - 12/21)</option>
+                                <option value="oziaragis" id="oziaragis">Ožiaragis (12/22 - 01/19)</option>
+                                <option value="vandenis" id="vandenis">Vandenis (01/20 - 02/18)</option>
+                                <option value="zuvys" id="zuvys">Žuvys (02/19 - 03/20)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <p class="text-center p-4">
+                        <button type="submit" id="pateikti" class="btn btn-danger btn-lg">Rezultatas</button>
+                    </p>
+                </form>
+                <div class="result">
+                    <div class="hide" id="avinasavinas" id="all">
+                        <p>
+                        <h3>Avinas ir Avinas</h3> Neišsenkančios kalbos apie viską pasaulyje ir taip mėgstamas aktyvus
+                        laisvalaikis
+                        kartu stiprins šios poros santykius. Aistra lovoje veršis per kraštus, tačiau abipusis noras
+                        dominuoti gali kelti audringus ginčus. Taigi, labai svarbu, kad abu partneriai šioje poroje
+                        suprastų, jog kartais reikia nusileisti savo išrinktajam, neįrodinėti savo tiesų.</p>
+                    </div>
+                    <div class="hide" id="avinasjautis" id="all">
+                        <p>
+                        <h3>Avinas ir Jautis</h3> Avinas –veržlus nutrūktgalvis švaistūnas. Jautis –ramus, praktiškas ir
+                        šiek tiek konservatyvus taupuolis. Avinui patinka Jaučio protas ir saugumo jausmas, o Jautį žavi
+                        Avino aistra ir spontaniškumas. Abu ženklai jausmingi ir be galo mėgstantys komfortą. Tai juos
+                        vienija, tačiau ilgainiui lėtesnis Jaučio gyvenimo tempas ir praktiškumas Avinui gali pabosti.
+                        Visgi tokie santykiai gali trukti ilgai, jeigu tik Jautis leis Avinui dominuoti.</p>
+                    </div>
+                    <div class="hide" id="avinasdvyniai" id="all">
+                        <p>
+                        <h3>Avinas ir Dvyniai</h3> Ši sąjunga žada daug nepamirštamų akimirkų. Abu ženklai be galo
+                        aktyvūs, kūrybingi, nepailstantys optimistai, tad judviejų santykiai gali būti kaip vienas
+                        didelis nuotykis. Tik Dvyniai turėtų atsisakyti savo pomėgio flirtuoti su priešingos lyties
+                        atstovais, nes Avinas nemėgsta savo partneriu dalintis dar su kažkuo.
+                        </p>
+                    </div>
+                    <div class="hide" id="avinasvezys" id="all">
+                        <p>
+                        <h3>Avinas ir Vėžys </h3> Ši sąjunga žada daug nepamirštamų akimirkų. Abu ženklai be galo
+                        aktyvūs, kūrybingi, nepailstantys optimistai, tad judviejų santykiai gali būti kaip vienas
+                        didelis nuotykis. Tik Dvyniai turėtų atsisakyti savo pomėgio flirtuoti su priešingos lyties
+                        atstovais, nes Avinas nemėgsta savo partneriu dalintis dar su kažkuo.
+                        </p>
                     </div>
                 </div>
-                <p class="text-center p-4">
-                    <button type="button" class="btn btn-danger btn-lg">Rezultatas</button>
-                </p>
             </div>
         </div>
+
 
     </main>
 

@@ -10,11 +10,7 @@ suderinamumoForma.addEventListener("submit", function (e) {
     let porosid = "#" + pora;
     let porosAprasymas = document.querySelector(porosid);
 
-    // console.log(document.querySelector("#jusuZenklas").value);
-    // console.log(document.querySelector("#partnerioZenklas").value);
-    // console.log(document.querySelector("#jusuZenklas").value + 
-    // document.querySelector("#partnerioZenklas").value)
-    // console.log(pora);
+
     if (pora == "avinasavinas") {
         document.querySelector(".result").innerHTML =
             `<p>

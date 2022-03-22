@@ -22,14 +22,15 @@ header {
 
 .nav-item {
     font-family: "Bodoni MT";
-    font-size: 30px;
-    float: left;
+    font-size: 25px;
+    float: center;
     width: 20%;
     margin: 0 auto;
     padding: 0px;
     color: black;
     background-image: url(IMG/Fono_paveikslėliai/rozinis_fonas.png);
     background-position: center;
+    
 }
 
 .nav-link {
@@ -66,4 +67,14 @@ header {
 	.footer-bg-img {
 		background-position: bottom;
 	}
+}
+
+
+@media only screen and (max-width: 800px) {
+    .nav {
+         display: block; 
+  }
+  .nav-item{
+    width: 100%;
+  }
 }
